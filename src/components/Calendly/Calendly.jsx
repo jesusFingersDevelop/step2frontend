@@ -9,8 +9,11 @@ const Calendly = () => {
   console.log(state);
   return (
     <>
+        <div className="calendlyWrapper">
       <Header />
+
       <div className="calendlyHelper">
+          <div className="blankSpace"></div>
           <h1 className="therapistName">{state.name} 치료사 예약</h1>
 
         <a href="https://www.youtube.com/watch?v=6s9pKLqvjlw" className="getHelp">
@@ -26,6 +29,7 @@ const Calendly = () => {
           frameborder="0"
         ></iframe>
       </div>
+        </div>
     </>
   );
 };
