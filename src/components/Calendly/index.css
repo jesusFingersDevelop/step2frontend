@@ -1,0 +1,39 @@
+.calendlyHelper {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.therapistName {
+    font-size: 1.9em;
+    text-align: center;
+
+}
+
+.getHelp {
+    position: absolute;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.questionMark {
+    font-size: 30px;
+    text-align: center;
+    width: 37px;
+    height: 37px;
+    font-weight: 900;
+    color: #4E8AFF;
+    border-radius: 50%;
+    background-color:#F1F5FE;
+}
+
+.questionTypo {
+    margin-top: 5px;
+    font-size: 0.8em;
+
+}

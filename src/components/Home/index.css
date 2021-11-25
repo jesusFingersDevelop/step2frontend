@@ -1,0 +1,44 @@
+.homeWrapper {
+    margin : 0 auto;
+    text-align: center;
+}
+
+.serviceSummary {
+    margin-top: 140px;
+    font-weight: 700;
+    font-size: 1.25em;
+    line-height: 30px;
+}
+
+.homeTypo {
+    margin-top: 15px;
+    font-weight: 900;
+    font-size: 2.5em;
+    color: #4E8AFF;
+}
+
+.tutorial {
+    margin-top: 75px;
+    width: min(85vw, 400px);
+    height: min(48vw, 225px);
+}
+
+.reservation {
+    margin-top:90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservationButton {
+    margin-bottom: 15px;
+    width: 185px;
+    height: 60px;
+    background-color:#F1F5FE;
+    border-radius: 30px;
+    border: 0;
+    font-size: 1.50em;
+    color: #4E8AFF;
+    font-weight: 900;
+}
