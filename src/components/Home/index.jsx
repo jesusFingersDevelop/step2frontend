@@ -1,24 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import "./index.css";
 
 function Index() {
+  const params = useParams();
+  const navigate = useNavigate();
+
   const PTInfo = [
     { name: "최봉수", id: "11t518s20161759" },
     { name: "송영진", id: "jesusfingers12" },
     { name: "임규민", id: "kmlim5122" },
   ];
-  const params = useParams();
 
-  const navigate = useNavigate();
+  useEffect(
+    () =>
+      PTInfo.some((PTinfo) => PTinfo.name === params.name)
+        ? null
+        : navigate("/"),
+    []
+  );
+
   const onPTClickHandler = (PTInfoItem) => {
-    // <navigate to="/reservation" replace state={id} />;
     navigate(`${PTInfoItem.id}/reservation`, { state: PTInfoItem });
   };
 
   const eachOnPTClickHandler = (PTName) => {
     const selectedPTInfo = PTInfo.filter((item) => item.name === PTName);
-
     navigate(`../${selectedPTInfo[0].id}/reservation`, {
       state: selectedPTInfo[0],
     });
