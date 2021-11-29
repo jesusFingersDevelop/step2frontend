@@ -15,12 +15,12 @@ function Home({ PTInfo }) {
   }, [navigate]);
 
   const onPTClickHandler = (PTInfoItem) => {
-    navigate(`${PTInfoItem.id}/reservation`, { state: PTInfoItem });
+    navigate(`${PTInfoItem.name}/reservation`, { state: PTInfoItem });
   };
 
   const eachOnPTClickHandler = (PTName) => {
     const selectedPTInfo = PTInfo.filter((item) => item.name === PTName);
-    navigate(`../${selectedPTInfo[0].id}/reservation`, {
+    navigate(`../${PTName}/reservation`, {
       state: selectedPTInfo[0],
     });
   };

@@ -17,7 +17,10 @@ function App() {
       <Routes>
         <Route path="/:name" element={<Home PTInfo={PTInfo} />}></Route>
         <Route path="/" element={<Home PTInfo={PTInfo} />}></Route>
-        <Route path="/:id/reservation" element={<Calendly />}></Route>
+        <Route
+          path="/:name/reservation"
+          element={<Calendly PTInfo={PTInfo} />}
+        ></Route>
         <Route
           path="/:name/reschedule"
           element={<Therapist PTInfo={PTInfo} />}
