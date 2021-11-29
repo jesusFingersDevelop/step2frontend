@@ -18,7 +18,8 @@ const Therapist = ({ PTInfo }) => {
         />
         <h1 className="therapistIntro">{params.name} 치료사님 전용 페이지</h1>
         <p className="therapistParagraph">
-          예약 스케줄 확인 및 예약시간 조정이 가능한 페이지입니다.
+          예약 스케줄 확인 및 예약시간 조정이
+          <br /> 가능한 페이지입니다.
         </p>
         <div className="therapistReschduleBlock">
           <div className="eachReschduleBlock">

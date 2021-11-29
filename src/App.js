@@ -22,7 +22,7 @@ function App() {
           element={<Calendly PTInfo={PTInfo} />}
         ></Route>
         <Route
-          path="/:name/reschedule"
+          path="/:name/admin"
           element={<Therapist PTInfo={PTInfo} />}
         ></Route>
       </Routes>
